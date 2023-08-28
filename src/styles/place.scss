@@ -1,0 +1,82 @@
+.place {
+  padding: 2rem;
+  gap: 2rem;
+}
+.card {
+  padding: 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+  width: 22%;
+  margin: 10px 0rem;
+  .image {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .details {
+    p,
+    strong {
+      font-size: 0.8rem;
+    }
+    img {
+      width: 30%;
+    }
+  }
+}
+.location {
+  padding: 2rem 6rem;
+  gap: 20px;
+  img,
+  select {
+    width: 161px;
+  }
+  select {
+    background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+    padding: 10px;
+    font-family: "Red Rose", cursive;
+    border: 1px solid #b4b4b4;
+    border-radius: 8px;
+    color: #333333;
+    height: 48px;
+    display: none;
+    option {
+      color: black;
+    }
+  }
+  .options ul {
+    gap: 10px;
+    li {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      color: $black;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  #place {
+    gap: 4rem;
+  }
+  .card {
+    width: 34%;
+  }
+  .location {
+    gap: 10rem;
+    select {
+      display: block;
+    }
+    .options {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .location {
+    gap: 1rem;
+  }
+  .card {
+    width: 80%;
+  }
+}

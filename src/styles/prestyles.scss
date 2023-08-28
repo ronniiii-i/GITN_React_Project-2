@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
+$purple: #a02279;
+$black: #434343;
+:root {
+  /*typography*/
+  font-family: "Red Rose", cursive;
+  /* size */
+  /* font-size: ; */
+  font-size: calc(62.5% + 0.390625vw);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+input:active,
+input:focus,
+select:active,
+select:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+
+p,
+label,
+span,
+input,
+select,
+option {
+  font-size: 1.2rem;
+}
+a {
+  display: inline-block;
+}
+a,
+button {
+  cursor: pointer;
+}
+.full-width {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.column {
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.by2 {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.mar-1 {
+  margin: 1rem 0;
+}
+.purple {
+  color: $purple;
+}

@@ -1,0 +1,16 @@
+#partners{
+    padding: 10px 20px;
+    background-color: $purple;
+    img{
+        width: 100%;
+        max-width: 230px;
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #partners{
+        img{
+            width: 40%;
+        }
+    }
+}

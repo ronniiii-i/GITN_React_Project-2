@@ -1,0 +1,75 @@
+@import "./styles/prestyles";
+@import "./styles/header";
+@import "./styles/hero";
+@import "./styles/partners";
+@import "./styles/place";
+@import "./styles/more";
+@import "./styles/footer";
+
+.bg {
+  opacity: 1;
+  z-index: 10;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.514);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all .3s;
+  padding: 20px;
+  *{
+    transition: all .7s;
+    opacity: 1;
+  }
+  .content {
+    background-color: white;
+    border-radius: 8px;
+    width: 35%;
+    .title {
+      padding: 15px;
+      border-bottom: 1px solid #cfd8dc;
+    }
+    .text {
+      padding: 30px 15px;
+      gap: 20px;
+      p {
+        font-size: 0.8rem;
+      }
+      button {
+        border: 1px solid #cfd8dc;
+        border-radius: 8px;
+        padding: 5px 10px;
+        &:first-child {
+          background-color: #f8f9fa;
+        }
+        &:last-child {
+          background-color: transparent;
+        }
+        img{
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+.bg.close {
+  z-index: -100;
+  opacity: 0;
+  *{
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bg{
+    .content{
+      width: 70%
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .bg{
+    .content{
+      width: 100%
+    }
+  }
+}

@@ -1,0 +1,66 @@
+#hero {
+  padding: 5rem;
+  .text {
+    width: 50%;
+    gap: 30px;
+    h1 span {
+      font-size: 3.5rem;
+    }
+    .search {
+      width: 100%;
+      input {
+        padding: 7px 10px;
+      }
+      input[type="text"] {
+        background: rgba(247, 247, 247, 0.1);
+        border: 1px solid #a3a3a3;
+        border-radius: 8px 0px 0px 8px;
+        color: #b8b8b8;
+        font-size: 16px;
+        width: 70%;
+      }
+      input[type="button"] {
+        background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+        border: none;
+        border-radius: 0px 8px 8px 0px;
+        font-size: 16px;
+        color: #ffffff;
+        width: 30%;
+      }
+    }
+  }
+  .image {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #hero {
+    flex-direction: column;
+    gap: 30px;
+    .text {
+      width: 75%;
+    }
+    .image {
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  #hero {
+    .text {
+      width: 100%;
+    }
+    .image {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  #hero {
+    padding: 3rem;
+  }
+}
